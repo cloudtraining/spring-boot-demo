@@ -32,5 +32,5 @@ public class DemoContext {
 		return calc;
 
 	}
-
+  
 }
