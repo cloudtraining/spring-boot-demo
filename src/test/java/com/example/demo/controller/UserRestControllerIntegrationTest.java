@@ -55,5 +55,14 @@ public class UserRestControllerIntegrationTest {
 		System.out.println("***EYECATCHER***" + actual.getBody());
 		
 	}
+	@Test
+	public void restCall_retrieveAllUsersExchange() {
+		@SuppressWarnings("rawtypes")
+		ResponseEntity<List> actual = testRestTemplate.getForEntity("/retrieveAllUsersExchange", List.class);
+		assertNotNull(actual);
+		assertEquals(10, actual.getBody().size());
+		System.out.println("***EYECATCHER***" + actual.getBody());
+		
+	}
 	
 }

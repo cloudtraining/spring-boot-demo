@@ -26,11 +26,9 @@ public class DemoContext {
 		JaxWsProxyFactoryBean factoryBean = new JaxWsProxyFactoryBean();
 		factoryBean.setServiceClass(CalculatorSoap.class);
 		factoryBean.setAddress(calculatorEndpoint);
-		log.info("creating CalculatorSoap");
 		CalculatorSoap calc = (CalculatorSoap) factoryBean.create();
 		log.info(String.format("adding results using soap webservice result[%d]", calc.add(1, 2)));
 		return calc;
-
 	}
   
 }
