@@ -10,10 +10,10 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.example.demo.DemoContext;
+import com.example.demo.SoapClientContext;
 @RunWith(SpringRunner.class)
 @TestPropertySource(locations= {"classpath:application.properties"})
-@ContextConfiguration(classes= {DemoContext.class})
+@ContextConfiguration(classes= {SoapClientContext.class})
 public class CalculatorDelegateIntegrationTest {
 	
 	@Resource(name="calculatorDelegate")

@@ -11,8 +11,8 @@ import org.springframework.web.client.RestTemplate;
 import com.example.demo.delegate.soap.CalculatorDelegate;
 
 @Configuration
-public class DemoContext {
-	private static final Logger log = LoggerFactory.getLogger(DemoContext.class);
+public class SoapClientContext {
+	private static final Logger log = LoggerFactory.getLogger(SoapClientContext.class);
 
 	@Value("${calculator.endpoint}")
 	private String calculatorEndpoint;
